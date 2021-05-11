@@ -1,0 +1,12 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Vas</item>
+        <item>Smart Phone</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>vas</item>
+        <item>smart_phone</item>
+    </string-array>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wusasmart.vas">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name=".AppSettingsActivity"
+            android:label="@string/title_activity_app_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+        <activity
+            android:name=".SplashscreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeviceListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+            <!--android:theme="@android:style/Theme.Dialog"-/>-->
+
+        <service
+            android:name=".ImageTransferService"
+            android:enabled="true" />
+        <service
+            android:name=".detectlabel"
+            android:enabled="true"
+            android:stopWithTask="true">
+            // android:launchMode="singleTask">//added ver12
+            <intent-filter>
+                <action android:name="android.intent.action.TTS_SERVICE" />
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsRedirectActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="myapp" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

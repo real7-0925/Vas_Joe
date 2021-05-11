@@ -1,0 +1,56 @@
+{
+  "vas": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vas2-vas-131522-authRole",
+      "UnauthRoleArn": "arn:aws:iam::638653633282:role/amplify-vas2-vas-131522-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::638653633282:role/amplify-vas2-vas-131522-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-vas2-vas-131522-deployment",
+      "UnauthRoleName": "amplify-vas2-vas-131522-unauthRole",
+      "StackName": "amplify-vas2-vas-131522",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:638653633282:stack/amplify-vas2-vas-131522/f0e8d1b0-9116-11eb-9ba8-025abbc9e760",
+      "AmplifyAppId": "dqy2quy3ieao5"
+    },
+    "categories": {
+      "auth": {
+        "vas2fdc2a872": {}
+      },
+      "function": {
+        "vas2fdc2a872PostConfirmation": {
+          "GROUP": "forvas"
+        },
+        "vas2fdc2a872PreTokenGeneration": {}
+      }
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vas2-dev-163924-authRole",
+      "UnauthRoleArn": "arn:aws:iam::638653633282:role/amplify-vas2-dev-163924-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::638653633282:role/amplify-vas2-dev-163924-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-vas2-dev-163924-deployment",
+      "UnauthRoleName": "amplify-vas2-dev-163924-unauthRole",
+      "StackName": "amplify-vas2-dev-163924",
+      "StackId": "arn:aws:cloudformation:us-east-1:638653633282:stack/amplify-vas2-dev-163924/ee467a60-9cfc-11eb-ac09-0a12c74ac309",
+      "AmplifyAppId": "d2101qnseqjgcl"
+    },
+    "categories": {
+      "auth": {
+        "vas2fdc2a872": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "vas2fdc2a872PostConfirmation": {
+          "GROUP": "vas",
+          "deploymentBucketName": "amplify-vas2-dev-163924-deployment",
+          "s3Key": "amplify-builds/vas2fdc2a872PostConfirmation-74746d6a75656b533741-build.zip"
+        },
+        "vas2fdc2a872PreTokenGeneration": {
+          "deploymentBucketName": "amplify-vas2-dev-163924-deployment",
+          "s3Key": "amplify-builds/vas2fdc2a872PreTokenGeneration-6b636270734d41396159-build.zip"
+        }
+      }
+    }
+  }
+}

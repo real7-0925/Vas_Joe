@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vas</string>
+
+    <string name="device">Device:</string>
+    <string name="no_device" translatable="false">&lt;Select a device&gt;</string>
+    <string name="select_device">Select a device</string>
+    <string name="status">Status</string>
+    <string name="llsWrite" translatable="false">LinkLossAlert</string>
+    <string name="iasWrite" translatable="false">ImmediateAlert</string>
+    <string name="scanning">Scanning for devices...</string>
+    <string name="no_ble_devices">No LE devices found.</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Not connected</string>
+    <string name="ready" translatable="false">Ready</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connect">connect</string>
+    <string name="unpair">unpair</string>
+    <string name="pair">pair</string>
+    <string name="RadioButton1" translatable="false">Alert level high</string>
+    <string name="RadioButton2" translatable="false">Alert level mid</string>
+    <string name="RadioButton3" translatable="false">Stop alerting</string>
+    <string name="SystemId" translatable="false">SystemId</string>
+    <string name="ModelNumber" translatable="false">ModelNumber</string>
+    <string name="SerialNumber" translatable="false">SerialNumber</string>
+    <string name="FirmwareRevision" translatable="false">FirmwareRevision</string>
+    <string name="HardwareRevision" translatable="false">HardwareRevision</string>
+    <string name="SoftwareRevision" translatable="false">SoftwareRevision</string>
+    <string name="ManufactureName" translatable="false">ManufactureName</string>
+    <string name="RegCertDataList" translatable="false">RegCertDataList</string>
+    <string name="ManufactureId" translatable="false">    ManufactureId</string>
+    <string name="BatteryLevel" translatable="false">    Battery Level</string>
+    <string name="OrgId" translatable="false">    OrganizationId</string>
+    <string name="Txpower" translatable="false">    Txpower Level</string>
+    <string name="Noupdate" translatable="false">    No Update</string>
+    <string name="ReadTxPower" translatable="false">ReadTxPower</string>
+    <string name="high_alert" translatable="false">HIGH Alert triggered!</string>
+    <string name="low_alert" translatable="false">LOW Alert triggered!</string>
+    <string name="writeTxnoti" translatable="false">TxNoti</string>
+    <string name="readRssi" translatable="false">Read Rssi Value</string>
+    <string name="Readdummy" translatable="false">D Read</string>
+    <string name="removeBond" translatable="false">Remove Bond</string>
+    <string name="paired" translatable="false">paired</string>
+    <string name="popup_title" translatable="false">Quit nRF UART?</string>
+    <string name="popup_message" translatable="false">Do you want to quit this Application?</string>
+    <string name="popup_yes" translatable="false">YES</string>
+    <string name="popup_no" translatable="false">NO</string>
+    <string name="ble_not_supported" translatable="false">Bluetooth Low Energy not supported</string>
+    <string name="scan">Scan</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings_text_pwm_min_base" translatable="false">PWM min value</string>
+    <string name="settings_text_pwm_max_base" translatable="false">PWM max value</string>
+    <string name="button_name" translatable="false">button</string>
+    <string name="last_update_40kbsp" translatable="false">Last update 40kbsp</string>
+    <string name="incoming_file" translatable="false">Incoming file:</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="start_stream">Start Stream</string>
+    <string name="mtu" translatable="false">MTU</string>
+    <string name="con_int" translatable="false">Con. Int.</string>
+    <string name="mtuminus" translatable="false">-</string>
+    <string name="CIminus" translatable="false">-</string>
+    <string name="ImageTransferred" translatable="false">Transferred Image</string>
+    <string name="_5_fps" translatable="false">5 FPS</string>
+    <string name="image_res" translatable="false">Image Res</string>
+    <string name="phy" translatable="false">Phy</string>
+    <string name="todo">TODO</string>
+    <string-array name="spinner_resolution">
+        <item>160x120</item>
+        <item>320x240</item>
+        <item>640x480</item>
+        <item>800x600</item>
+        <item>1024x768</item>
+        <item>1600x1200</item>
+    </string-array>
+
+    <string-array name="spinner_phy">
+        <item>1Mbps</item>
+        <item>2Mbps</item>
+    </string-array>
+
+
+    <string name="no_ble">Device doesn\'t have BLE support!</string>
+    <string name="title_activity_app_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Sound Settings</string>
+    <string name="sync_header">Sync</string>
+<string name="sound_header">Sound</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Play media to</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Play media to</string>
+    <string name="attachment_summary_on">Vas
+    </string>
+    <string name="attachment_summary_off">This device</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_title">About</string>
+    <string name="about_version">\n\nVersion: %s</string>
+    <string name="about_text">The Vas is a strong application that help you detect items and obstacles</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorNordicLogoTop">@color/nordicLightGray</color>
+    <!-- Nordic colors -->
+
+    <color name="nordicLightGray">#FFD9E1E2</color>
+
+
+</resources>

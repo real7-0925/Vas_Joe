@@ -1,0 +1,100 @@
+{
+  "api": {
+    "amplifyDatasource": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "description": "",
+              "apiKeyExpirationDays": 7
+            }
+          }
+        }
+      }
+    }
+  },
+  "auth": {
+    "vas2fdc2a872": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "vas2fdc2a872PostConfirmation",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "vas2fdc2a872PreTokenGeneration",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
+      "customAuth": false
+    },
+    "userPoolGroups": {
+      "service": "Cognito-UserPool-Groups",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "vas2fdc2a872",
+          "attributes": [
+            "UserPoolId",
+            "AppClientIDWeb",
+            "AppClientID",
+            "IdentityPoolId"
+          ]
+        }
+      ]
+    }
+  },
+  "function": {
+    "vas2fdc2a872PostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "vas2fdc2a872PreTokenGeneration": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "predictions": {
+    "detectlabels": {
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition",
+      "dependsOn": [],
+      "identifyType": "identifyLabels"
+    },
+    "translate": {
+      "providerPlugin": "awscloudformation",
+      "service": "Translate",
+      "convertType": "translateText"
+    },
+    "identifyentities": {
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition",
+      "dependsOn": [],
+      "identifyType": "identifyEntities"
+    },
+    "identifytext": {
+      "providerPlugin": "awscloudformation",
+      "service": "RekognitionAndTextract",
+      "dependsOn": [],
+      "identifyType": "identifyText"
+    }
+  }
+}
